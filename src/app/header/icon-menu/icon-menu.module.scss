@@ -1,0 +1,19 @@
+@import "~styles/styles.module.scss";
+
+.iconMenu {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-around;
+
+	li svg {
+		fill: white!important;
+	}
+}
+
+.selectedIcon {
+	background: $dark-grey;
+	padding: 10px 10px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
