@@ -1,0 +1,20 @@
+@import "~styles/styles.module.scss";
+
+.itemsMenu {
+	color: #9d9c9e;
+	width: 100%;
+	justify-content: space-around;
+	height: 50px;
+	align-items: center;
+	padding: 0 50px;
+	background: $dark-grey;
+	display: flex;
+	flex-direction: row;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 1.2rem;
+}
+
+.selected {
+	color: white;
+}

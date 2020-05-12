@@ -1,0 +1,27 @@
+.app {
+	display: flex;
+	width: 480px;
+	max-height: 940px;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.appWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	font-family: Arial;
+}
+
+* {
+	box-sizing: border-box;
+}
