@@ -1,2 +1,2 @@
 export { App } from './app'
-export { store } from './reducer'
+export { reducer } from './reducer'

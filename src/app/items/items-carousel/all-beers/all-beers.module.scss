@@ -1,0 +1,9 @@
+.items {
+	display: flex;
+	flex-wrap: wrap;
+
+	li {
+		width: 33%;
+		padding: 20px;
+	}
+}

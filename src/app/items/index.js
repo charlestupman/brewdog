@@ -1,1 +1,1 @@
-export { Items } from './items'
+export { ItemsConnected as Items } from './container'

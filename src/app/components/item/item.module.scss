@@ -1,0 +1,27 @@
+@import "~styles/styles.module.scss";
+
+.item {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+}
+
+.imageWrapper {
+	display: flex;
+	justify-content: center;
+	height: 150px;
+	padding: 10px;
+	border: 1px $dark-grey solid;
+	border-radius: 5px;
+	margin-bottom: 10px;
+
+	img {
+		max-height: 100%;
+	}
+}
+
+.label {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}

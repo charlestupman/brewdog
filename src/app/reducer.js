@@ -4,8 +4,8 @@ import { beers } from "./domain"
 
 const { BEERS_GET } = beers.actionTypes
 
-export const store = combineReducers({
+export const reducer = combineReducers({
 	domain: combineReducers({
-		beers: reducerFactory(BEERS_GET),
+		allBeers: reducerFactory(BEERS_GET),
 	})
 })
