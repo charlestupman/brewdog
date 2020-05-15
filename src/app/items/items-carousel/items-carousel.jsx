@@ -1,27 +1,28 @@
 import React from 'react'
 import { CarouselProvider, Slide, Slider } from 'pure-react-carousel'
-
-import { AllBeers } from './all-beers'
+import { Items } from 'app/components'
 
 import styles from './items-carousel.module.scss'
 
 import PropTypes from 'prop-types'
 
-export const ItemsCarousel = ({ selectedItems = 'all' }) =>
-	<CarouselProvider naturalSlideHeight={500} naturalSlideWidth={100} dragEnabled touchEnabled totalSlides={3}>
+export const ItemsCarousel = ({ allBeers, pizzaBeers, steakBeers }) =>
 		<Slider className={styles['items-carousel']}>
-			<Slide number={0}>
-				<AllBeers/>
+			<Slide number={0} >
+				<Items items={allBeers}/>
 			</Slide>
 			<Slide number={1}>
-				<AllBeers/>
+				<Items items={pizzaBeers} />
 			</Slide>
 			<Slide number={2}>
-				<AllBeers/>
+				<Items items={steakBeers} />
 			</Slide>
 		</Slider>
-	</CarouselProvider>
 
 ItemsCarousel.propTypes = {
 	selectedItems: PropTypes.string,
+	allBeers: PropTypes.array,
+	pizzaBeers: PropTypes.array,
+	steakBeers: PropTypes.array,
+	setCurrentSlide: PropTypes.func,
 }

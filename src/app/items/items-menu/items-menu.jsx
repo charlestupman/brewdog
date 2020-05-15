@@ -1,21 +1,17 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import styles from './items-menu.module.scss'
-
+import { Dot } from 'pure-react-carousel'
 
 const itemCategories = [
 	'all', 'pizza', 'steak'
 ]
 
-export const ItemsMenu = ({ selectedItems = 'all' }) =>
+export const ItemsMenu = () =>
 	<ul className={styles.itemsMenu}>
-		{itemCategories.map(item =>
-			<li className={selectedItems === item ? styles.selected : ''}>
+		{itemCategories.map((item, index) =>
+			<Dot slide={index}>
 				{item}
-			</li>
+			</Dot>
 		)}
 	</ul>
-
-ItemsMenu.propTypes = {
-	selectedItems: PropTypes.string,
-}

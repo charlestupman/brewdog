@@ -6,15 +6,24 @@
 	justify-content: space-around;
 	height: 50px;
 	align-items: center;
-	padding: 0 50px;
+	padding: 10px 50px;
 	background: $dark-grey;
 	display: flex;
 	flex-direction: row;
 	text-transform: uppercase;
 	cursor: pointer;
 	font-size: 1.2rem;
-}
 
-.selected {
-	color: white;
+
+	button {
+		color: #9d9c9e;
+		border-color: inherit;
+		border: none;
+		background: inherit;
+		font-size: inherit;
+		text-transform: uppercase;
+		&:disabled {
+			color: white;
+		}
+	}
 }

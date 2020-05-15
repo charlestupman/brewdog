@@ -1,11 +1,9 @@
 import { combineReducers } from "redux"
-import { reducerFactory } from "./domain/factories"
-import { beers } from "./domain"
+import { reducer as beersReducer } from "../domain/beers"
+import { reducer as appReducer } from './redux'
 
-const { BEERS_GET } = beers.actionTypes
 
 export const reducer = combineReducers({
-	domain: combineReducers({
-		allBeers: reducerFactory(BEERS_GET),
-	})
+	app: appReducer,
+	domain: beersReducer,
 })
