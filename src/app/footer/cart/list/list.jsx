@@ -7,9 +7,9 @@ import { CartItem } from 'app/components'
 
 export const List = ({ cart, removeFromCart }) =>
 	<ul className={styles.list}>
-		{cart.map(item =>
+		{cart.map((item, index) =>
 			<li>
-				<CartItem item={item} removeFromCart={removeFromCart} />
+				<CartItem item={item} removeFromCart={removeFromCart} index={index} />
 			</li>
 		)}
 	</ul>

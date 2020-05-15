@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import styles from './cart-item.module.scss'
 
 
-export const CartItem = ({ item, removeFromCart }) =>
+export const CartItem = ({ item, removeFromCart, index }) =>
 	<ul className={styles.cartItem}>
 		<li>
 			<img src={item.image_url} alt={item.name}/>
@@ -16,7 +16,7 @@ export const CartItem = ({ item, removeFromCart }) =>
 			{item.abv}
 		</li>
 		<li>
-			<button onClick={() => removeFromCart(item)} >Remove</button>
+			<button onClick={() => removeFromCart(index)} >Remove</button>
 		</li>
 	</ul>
 
