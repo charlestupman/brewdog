@@ -6,16 +6,16 @@ import styles from './carousel.module.scss'
 
 import PropTypes from 'prop-types'
 
-export const Carousel = ({ allBeers, pizzaBeers, steakBeers }) =>
+export const Carousel = ({ allBeers, pizzaBeers, steakBeers, addToCart }) =>
 		<Slider className={styles['items-carousel']}>
 			<Slide number={0} >
-				<Items items={allBeers}/>
+				<Items items={allBeers} addToCart={addToCart}/>
 			</Slide>
 			<Slide number={1}>
-				<Items items={pizzaBeers} />
+				<Items items={pizzaBeers} addToCart={addToCart}/>
 			</Slide>
 			<Slide number={2}>
-				<Items items={steakBeers} />
+				<Items items={steakBeers} addToCart={addToCart}/>
 			</Slide>
 		</Slider>
 
@@ -25,4 +25,5 @@ Carousel.propTypes = {
 	pizzaBeers: PropTypes.array,
 	steakBeers: PropTypes.array,
 	setCurrentSlide: PropTypes.func,
+	addToCart: PropTypes.func,
 }

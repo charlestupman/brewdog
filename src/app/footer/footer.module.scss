@@ -8,10 +8,11 @@ $footer-background-color: $dark-grey;
 	position: fixed;
 	width: 100%;
 	max-width: 480px;
-	height: 100%;
+	bottom: -40px;
 
 	&.active {
-		top: 30%;
+		top: 20%;
+		bottom: 0;
 	}
 }
 

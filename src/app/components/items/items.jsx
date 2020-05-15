@@ -3,15 +3,16 @@ import PropTypes from 'prop-types'
 import { Item } from 'app/components'
 import styles from './items.module.scss'
 
-export const Items = ({ items }) =>
+export const Items = ({ items, addToCart }) =>
 	<ul className={styles.items}>
-		{items.map(beer =>
+		{items.map(item =>
 			<li>
-				<Item {...beer} />
+				<Item item={item} addToCart={addToCart} />
 			</li>
 		)}
 	</ul>
 
 Items.propTypes = {
 	items: PropTypes.array,
+	addToCart: PropTypes.func,
 }

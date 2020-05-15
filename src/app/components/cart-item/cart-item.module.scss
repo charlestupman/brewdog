@@ -1,0 +1,17 @@
+.cartItem {
+	color: white;
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+
+	justify-content: space-between;
+	align-items: center;
+
+	button {
+		background: white;
+	}
+
+	img {
+		height: 30px;
+	}
+}

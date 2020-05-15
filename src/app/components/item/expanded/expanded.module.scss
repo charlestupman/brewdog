@@ -1,0 +1,19 @@
+.expanded {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+
+	img {
+		max-height: 200px;
+		margin-right: 20px;
+	}
+
+	li {
+		margin-bottom: 10px;
+	}
+}
+
+.description {
+	display: flex;
+	flex-direction: row;
+}
