@@ -1,3 +1,3 @@
 const namespace = 'APP/'
 
-export const SET_CURRENT_SLIDE = namespace + 'SET_CURRENT_SLIDE'
+export const TOGGLE_FOOTER = namespace + 'TOGGLE_FOOTER'

@@ -8,3 +8,6 @@ export const pizzaBeers = (state) =>
 
 export const steakBeers = (state) =>
 	path(['domain', 'steakBeers'], state)
+
+export const beersPage = (state) =>
+	path(['domain', 'beersPage', 'beersPage'], state)

@@ -19,7 +19,7 @@ export const Items = ({ getBeers, setCurrentSlide, currentSlide }) => {
 			totalSlides={3}
 		>
 			<ItemsMenu setCurrentSlide={setCurrentSlide} currentSlide={currentSlide}/>
-			<ItemsCarousel setCurrentSlide={setCurrentSlide} currentSlide={currentSlide}/>
+			<ItemsCarousel setCurrentSlide={setCurrentSlide} currentSlide={currentSlide} />
 		</CarouselProvider>
 	)
 }

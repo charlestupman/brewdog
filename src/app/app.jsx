@@ -4,6 +4,7 @@ import { Header } from './header'
 import { Items } from './items'
 import { Provider } from 'react-redux'
 import { store } from '../store'
+import { Footer } from './footer'
 
 export const App = () =>
 	<Provider store={store}>
@@ -11,6 +12,7 @@ export const App = () =>
 			<div className={styles.app}>
 				<Header/>
 				<Items/>
+				<Footer/>
 			</div>
 		</div>
 	</Provider>

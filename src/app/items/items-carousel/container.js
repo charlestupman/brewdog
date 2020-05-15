@@ -1,11 +1,17 @@
 import { connect } from 'react-redux'
 import { ItemsCarousel } from './items-carousel'
-import { selectors } from 'domain/beers'
+import { actions, selectors  } from 'domain/beers'
+
+const { beersGet } = actions
+
+const { beersPage, allBeers } = selectors
 
 const mapStateToProps = state => ({
- allBeers: selectors.allBeers(state),
- pizzaBeers: selectors.pizzaBeers(state),
- steakBeers: selectors.steakBeers(state)
+	allBeers: allBeers(state),
+	page: beersPage(state)
 })
 
-export const ItemsCarouselConnected = connect(mapStateToProps)(ItemsCarousel)
+const mapDispatchToProps = dispatch => ({
+	getMoreBeers: (page) => beersGet(dispatch, { page: page })
+})
+export const ItemsCarouselConnected = connect(mapStateToProps, mapDispatchToProps)(ItemsCarousel)

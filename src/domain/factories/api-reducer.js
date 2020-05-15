@@ -38,7 +38,10 @@ export const apiReducerFactory = actionType => (
 export const reducerFactory = actionType => (state = [], action) => {
 	switch (action.type) {
 		case actionType + SUCCESS: {
-			return action.payload
+			return [
+				...state,
+				...action.payload
+			]
 		}
 		default:
 			return state

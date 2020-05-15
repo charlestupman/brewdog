@@ -1,4 +1,4 @@
 import { path } from 'ramda'
 
-export const currentSlide = state =>
-	path(['app', 'currentSlide'], state)
+export const footerActive = state =>
+	path(['app', 'footerActive'], state)

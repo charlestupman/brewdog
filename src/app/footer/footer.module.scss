@@ -1,0 +1,26 @@
+@import "~styles/styles.module.scss";
+
+$footer-background-color: $dark-grey;
+
+.footerWrapper {
+	transition: 0.3s;
+	top: 100%;
+	position: fixed;
+	width: 100%;
+	max-width: 480px;
+	height: 100%;
+
+	&.active {
+		top: 30%;
+	}
+}
+
+.footer {
+	position: absolute;
+	background: $footer-background-color;
+	top: -40px;
+	bottom: 0;
+	width: 100%;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}

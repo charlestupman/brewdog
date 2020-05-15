@@ -1,9 +1,12 @@
 .app {
 	display: flex;
-	width: 480px;
-	max-height: 940px;
+	width: 100%;
+	max-width: 480px;
 	flex-direction: column;
 	overflow: hidden;
+	position: fixed;
+	top: 0;
+	bottom: 0;
 }
 
 .appWrapper {

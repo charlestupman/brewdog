@@ -1,15 +1,15 @@
-import { SET_CURRENT_SLIDE } from './action-types'
+import { TOGGLE_FOOTER } from './action-types'
 
 const initialState = {
-	currentSlide: 0,
+	footerActive: false,
 }
 
 export const reducer = (state = initialState, action) => {
 	switch (action.type) {
-		case SET_CURRENT_SLIDE: {
+		case TOGGLE_FOOTER: {
 			return {
 				...state,
-				currentSlide: action.payload,
+				footerActive: action.payload ? action.payload : !state.footerActive,
 			}
 		}
 		default:

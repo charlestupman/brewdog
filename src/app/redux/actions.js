@@ -1,6 +1,6 @@
-import { SET_CURRENT_SLIDE } from './action-types'
+import { TOGGLE_FOOTER } from './action-types'
 
-export const setCurrentSlide = payload => ({
-	type: SET_CURRENT_SLIDE,
+export const toggleFooter = (payload) => ({
+	type: TOGGLE_FOOTER,
 	payload
 })
